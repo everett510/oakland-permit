@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Oakland Permit Waiting Counter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            line-height: 1.6;
-        }
+<title>Oakland Permit Waiting Counter</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+max-width: 700px;
+margin: 40px auto;
+line-height: 1.6;
+}
 
-        h1 {
-            color: #333;
-        }
+h1 {
+color: #333;
+}
 
-        .counter {
-            font-size: 28px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
+.counter {
+font-size: 28px;
+font-weight: bold;
+margin: 20px 0;
+}
 
-        .box {
-            background: #f4f4f4;
-            padding: 15px;
-            margin: 10px 0;
-        }
-    </style>
+.box {
+background: #f4f4f4;
+padding: 15px;
+margin: 10px 0;
+}
+</style>
 </head>
 
 <body>
@@ -47,7 +47,7 @@ let diff = today - startDate;
 let days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
 document.getElementById("days").innerHTML =
-    days + " days and counting";
+days + " days and counting";
 
 let burritos = Math.floor(days * 1.5);
 let pge = Math.floor(days / 30);
