@@ -45,16 +45,18 @@ let today = new Date();
 
 let diff = today - startDate;
 let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+let cost = 9000;
+let burrito_cost = 15;
 
 document.getElementById("days").innerHTML =
 days + " days and counting";
 
-let burritos = Math.floor(days * 1.5);
-let pge = Math.floor(days / 30);
-let foodbank = days * 20;
+let burritos = Math.floor(cost / burrito_cost);
+let pge = Math.floor(cost / 200);
+let foodbank = cost;
 
 document.getElementById("comparisons").innerHTML = `
-<p>In this time you could have eaten <b>${burritos}</b> burritos.</p>
+<p>In this time you could have purchased <b>${burritos}</b> burritos.</p>
 <p>Or paid approximately <b>${pge}</b> PG&E bills.</p>
 <p>Or donated about <b>$${foodbank}</b> worth of food to the Alameda County Food Bank.</p>
 <p>Permit status: Still waiting.</p>
