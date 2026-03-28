@@ -41,9 +41,9 @@ margin: 10px 0;
 <script>
 
 let startDate = new Date("2025-12-04");
-let today = new Date();
+let endDate = new Date("2025-03-26");
 
-let diff = today - startDate;
+let diff = endDate - startDate;
 let days = Math.floor(diff / (1000 * 60 * 60 * 24));
 let cost = 9000;
 let burrito_cost = 15;
@@ -60,11 +60,15 @@ document.getElementById("comparisons").innerHTML = `
 <p>Or paid approximately <b>${pge}</b> PG&E bills.</p>
 <p>Or donated about <b>$${foodbank}</b> worth of food to the Alameda County Food Bank.</p>
 <p>Or filled 6 potholes on Oakland streets.</p>
-<p>Or paid 1.8% of the 2024 overtime compensation for the leader of the traffic unit and vice president of the OPOA police union.</p>
+<p>Or paid 1.8% of the 2024 overtime compensation for the leader of the traffic unit and vice president of the OPOA police union.  Wait a second, bad idea</p>
 
 
 
-<p>Permit status: Still waiting.</p>
+<p>Permit status: Approved.</p>
+
+let pages_submitted = 27;
+let ppd = Math.floor(pages_submitted / days);
+<p>Final statistics:  {pages_submitted} pages submitted. ${ppd} pages reviewed per day. </p>
 `;
 
 </script>
