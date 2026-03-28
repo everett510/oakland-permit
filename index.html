@@ -52,7 +52,7 @@ document.getElementById("days").innerHTML =
 days + " days in total.";
 
 let pages_submitted = 27;
-let ppd = Math.floor(pages_submitted / days);
+let ppd = (pages_submitted / days).toFixed(2);
 
 let burritos = Math.floor(cost / burrito_cost);
 let pge = Math.floor(cost / 200);
